@@ -1,0 +1,19 @@
+---
+- name: RETRIEVE DEVICE INFORMATION
+  ios_command:
+    commands:
+      - show version
+  register: device_info
+
+- name: CONFIGURE INTERFACE DESCRIPTION AND IP ADDRESS
+  ios_config:
+    parents: "interface GigabitEthernet1"
+    lines:
+      - description Link to Core Network
+      - ip address 192.168.1.1 255.255.255.0
+      - no shutdown
+
+- name: CONFIGURE STATIC ROUTE
+  ios_config:
+    lines:
+      - ip route 0.0.0.0 0.0.0.0 192.168.1.254
