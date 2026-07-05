@@ -168,6 +168,23 @@ Contains the Ansible configuration, including:
 - Disabled retry files
 - Suppressed deprecation warnings
 
+### hosts
+
+Defines the Cisco CSR1000v router inventory used by Ansible.
+
+Current inventory:
+
+```ini
+CSR1kv ansible_user=cisco ansible_password=cisco123! ansible_host=192.168.56.101
+```
+
+This inventory specifies:
+
+- **Device Name:** CSR1kv
+- **Management IP Address:** 192.168.56.101
+- **Username:** cisco
+- **Password:** cisco123!
+
 ### main_configure.yml
 
 Acts as the main playbook that executes:
