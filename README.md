@@ -235,7 +235,7 @@ ansible-playbook main_configure.yml
 | **Ahmad Raziq** | Implemented `collect_metrics.py` to generate Linux system monitoring reports using Python and Linux system commands. |
 | **Azfar Sharifuddin** | Developed `ansible.cfg`, `hosts`, and `tasks_interface_routing.yml` for interface configuration, routing, and device information retrieval. |
 | **Aniq Aziq** | Developed `tasks_security.yml` to automate user account creation and router security banner configuration. |
-| **Muhammad Danial Bin Nasharudin** | Prepared the project documentation, organized the repository documentation, and maintained `README.md`. |
+| **Muhammad Danial Bin Nasharudin** | Prepared the project documentation in README, organized the repository documentation, and maintained `README.md`. |
 
 ---
 
